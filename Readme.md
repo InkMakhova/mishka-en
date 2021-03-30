@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Inna Makhova](https://up.htmlacademy.ru/adaptive/22/user/1174641).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин] (https://htmlacademy.ru/profile/id263537).
 
 ---
 

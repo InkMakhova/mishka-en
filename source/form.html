@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo logo">
+      <a class="page-header__logo logo" href="index.html">
         <img src="img/logo_mobile.png" width="86" height="35" alt="Логотип сайта Мишка">
       </a>
       <div class="page-header__wrapper">
@@ -24,7 +24,7 @@
                 <a href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Вязание на заказ</a>
+                <a>Вязание на заказ</a>
               </li>
             </ul>
           </div>
@@ -65,117 +65,95 @@
     </header>
 
     <main class="page-main">
-      <section class="categories">
-        <div class="categories__wrapper">
-          <h1 class="page-main__title main-title">Милые штуки ручной работы для дома</h1>
-          <ul class="categories__list">
-            <li class="categories__item">
-              <div class="categories__item-content category category--interior">
-                <a class="category__link" href="#">Предметы интерьера</a>
+      <section class="order">
+        <div class="order__wrapper">
+          <div class="order__title-wrapper">
+            <h1 class="order__title main-title">Вязание на заказ</h1>
+          </div>
+          <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните прост</p>
+          <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="order-form__fieldset product-type">
+              <legend class="product-type__legend">Тип</legend>
+              <ul class="product-type__list">
+                <li class="product-type__item">
+                  <input class="product-type__radio-button" type="radio" name="type" value="accessory" id="accessory" checked="">
+                  <label class="product-type__radio-label" for="accessory">Аксессуар для интерьера</label>
+                </li>
+                <li class="product-type__item">
+                  <input class="product-type__radio-button" type="radio" name="type" value="toy" id="toy">
+                  <label class="product-type__radio-label" for="toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="order-form__fieldset product-color">
+              <legend class="product-color__legend">Цвет</legend>
+              <ul class="product-color__list">
+                <li class="product-color__item">
+                  <input class="product-color__radio-button" type="checkbox" name="white" id="white" value="white" checked="">
+                  <label class="product-color__radio-label" for="white">Белый</label>
+                </li>
+                <li class="product-color__item">
+                  <input class="product-color__radio-button" type="checkbox" name="grey" id="grey" value="grey" checked="">
+                  <label class="product-color__radio-label" for="grey">Серый</label>
+                </li>
+                <li class="product-color__item">
+                  <input class="product-color__radio-button" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
+                  <label class="product-color__radio-label" for="tiffany">«Тиффани»</label>
+                </li>
+                <li class="product-color__item">
+                  <input class="product-color__radio-button" type="checkbox" name="black" id="black" value="black">
+                  <label class="product-color__radio-label" for="black">Черный</label>
+                </li>
+                <li class="product-color__item">
+                  <input class="product-color__radio-button" type="checkbox" name="pink" id="pink" value="pink">
+                  <label class="product-color__radio-label" for="pink">Розовый</label>
+                </li>
+                <li class="product-color__item">
+                  <input class="product-color__radio-button" type="checkbox" name="orange" id="orange" value="orange">
+                  <label class="product-color__radio-label" for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="order-form__fieldset user-full-name">
+              <legend class="user-full-name__legend">ФИО</legend>
+              <div class="user-full-name__wrapper">
+                <label class="user-full-name__label" for="first-name">Имя:</label>
+                <input class="user-full-name__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
               </div>
-            </li>
-            <li class="categories__item">
-              <div class="categories__item-content category category--toys">
-                <a class="category__link" href="#">Детские игрушки</a>
+              <div class="user-full-name__wrapper">
+                <label class="user-full-name__label" for="last-name">Фамилия:</label>
+                <input class="user-full-name__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
               </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="popular">
-        <div class="popular__wrapper">
-          <div class="popular__title-wrapper">
-            <h2 class="popular__title title">Вязаные корзинки</h2>
-            <small>Товар недели</small>
-          </div>
-          <p class="popular__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="popular__characteristics-table characteristics">
-            <tr>
-              <td data-value="">Цвет:</td>
-              <td data-value="">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td data-value="">Диаметр:</td>
-              <td data-value="">25 см</td>
-            </tr>
-            <tr>
-              <td data-value="">Высота:</td>
-              <td data-value="">15 см</td>
-            </tr>
-          </table>
-          <img class="popular__image" src="img/triple_set_mobile.jpg" width="260" height="315" alt="Товар недели: вязаные корзинки">
-          <p class="popular__price">Цена: 990 руб.</p>
-          <a class="popular__link button" href="#">Заказать</a>
-        </div>
-      </section>
-
-      <section class="about-us">
-        <div class="about-us__wrapper">
-          <h2 class="about-us__title title">Коротко о нас:</h2>
-          <ul class="about-us__list advantages">
-            <li class="advantages__item advantages__item--eco">
-              Экологически чистые материалы
-            </li>
-            <li class="advantages__item advantages__item--money">
-              Скандинавский стиль по российской цене
-            </li>
-            <li class="advantages__item advantages__item--heart">
-              Увеличивает лайки на фотографиях
-            </li>
-            <li class="advantages__item advantages__item--wool-ball">
-              Связано вручную с любовью и умилением
-            </li>
-            <li class="advantages__item advantages__item--airplane">
-              Поддержка отечественного производителя
-            </li>
-            <li class="advantages__item advantages__item--gift">
-              Поставляется в подарочной упаковке
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="reviews">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title title">Отзывы</h2>
-          <p class="reviews__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-            как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-            и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <p class="reviews__text reviews__text--user-name">Анастасия Красильникова</p>
-          <p class="reviews__text reviews__text--user-nickname">@misssssiskras</p>
-          <div class="reviews__controls">
-            <button class="reviews__button-control button-control--prev">Previous</button>
-            <button class="reviews__button-control button-control--next">Next</button>
-          </div>
-          <a class="reviews__link button" href="#">Написать</a>
-        </div>
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title title title--size--s">Контакты</h2>
-          <div class="contacts__email-wrapper">
-            <p>e-mail:</p>
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__adress-wrapper">
-            <p>адрес:</p>
-            <p>г. Санкт-Петербургул. Большая Конюшенная д. 19/8, офис 101</p>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871592122!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfi!4v1617021509698!5m2!1sru!2sfi"
-            width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
-          <a class="contacts__link button" href="#">Напишите нам</a>
+              <div class="user-full-name__wrapper">
+                <label class="user-full-name__label" for="middle-name">Отчество:</label>
+                <input class="user-full-name__input" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+              </div>
+            </fieldset>
+            <div class="order-form__contact-wrapper contact contact--phone">
+              <label class="contact__label" for="contact-phone">Тел</label>
+              <input class="contact__input" type="tel" id="contact-phone" name="contact-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </div>
+            <div class="order-form__contact-wrapper contact contact--email">
+              <label class="contact__label" for="contact-email">E-mail</label>
+              <input class="contact__input" type="email" id="contact-email" name="contact-email" placeholder="Ваш Email*" required>
+            </div>
+            <div class="order-form__info-wrapper additional-info">
+              <label class="additional-info__label"  for="additional">Доп</label>
+              <textarea class="additional-info__textarea" name="additional" id="additional" cols="25" rows="8" placeholder="Опишите все ваши пожелания к заказу">
+              </textarea>
+            </div>
+            <p class="order-form__text">
+              <small>*Поля обязательны для заполнения</small>
+            </p>
+            <button type="submit" class="order-form__button button">Отправить заказ</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo--footer">
+        <a class="page-footer__logo logo--footer" href="index.html">
           <svg width="102" height="35" viewBox="0 0 102 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2204 21.5C19.1204 18.8 18.7204 16.2 18.7204 13.5C18.7204 11.3 19.1204 9.09997 18.3204 6.99997C18.3204 6.79997 18.4204 6.49997 18.4204 6.29997C18.6204 5.29997 15.1204 5.79997 14.6204 6.79997C14.3204 7.09997 14.1204 7.39997 14.2204 7.79997C14.2204 7.89997 14.3204 7.99997 14.3204 8.09997C13.6204 11.3 12.7204 14.4 11.7204 17.5C11.3204 18.7 10.8204 19.8 10.4204 21C9.82041 19.9 9.22041 18.8 8.82041 17.6C7.42041 14.2 6.22041 10.7 4.52041 7.39997C4.72041 5.89997 1.32041 5.99997 0.620408 7.39997C-0.179592 9.09997 -0.0795918 10.8 0.220408 12.6C0.520408 14.6 0.620408 16.6 0.620408 18.7C0.620408 22.7 1.02041 26.6 1.02041 30.6C0.620408 31 0.520408 31.5 0.920408 32C1.12041 32.2 1.32041 32.4 1.52041 32.5C2.52041 33.2 5.12041 32.6 5.12041 31.2C5.12041 27.1 4.82041 23 4.72041 18.8C4.72041 18.4 4.72041 18 4.72041 17.6C4.82041 17.7 4.82041 17.9 4.92041 18C5.52041 19.6 6.22041 21.2 7.12041 22.7C8.02041 24.2 8.42041 25.8 8.92041 27.4C8.72041 27.6 8.62041 27.9 8.72041 28.1C8.72041 28.3 8.82041 28.4 9.02041 28.5C9.62041 29 10.8204 28.8 11.5204 28.5C11.8204 28.4 12.1204 28.2 12.3204 28.1C12.6204 27.9 13.2204 27.4 13.0204 26.9C13.0204 26.8 12.9204 26.7 12.9204 26.6C13.4204 25.3 13.6204 24 13.9204 22.7C14.2204 21.3 14.7204 19.9 15.2204 18.6C15.3204 19.2 15.3204 19.8 15.4204 20.5C15.6204 23.1 15.4204 25.6 15.4204 28.1C15.4204 28.9 15.5204 29.7 15.6204 30.6C15.7204 30.9 16.0204 32.4 15.9204 32.5C15.1204 33 15.3204 33.6 16.1204 33.8C17.0204 34 18.2204 33.7 18.9204 33.1C20.1204 32 19.5204 30.3 19.3204 28.9C18.8204 26.5 19.3204 23.9 19.2204 21.5Z"
             fill="black"/>
