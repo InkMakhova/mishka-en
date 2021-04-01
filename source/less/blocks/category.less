@@ -1,0 +1,32 @@
+.category {
+  box-sizing: border-box;
+  height: 103px;
+}
+
+.category--interior {
+  background-color: @green;
+}
+
+.category--toys {
+  background-color: @green-dark;
+}
+
+.category__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: @white;
+}
+
+.category__link--interior::after {
+  content: url(../../img/interior.svg);
+  width: 40px;
+  height: 62px;
+}
+
+.category__link--toy::after {
+  content: url(../../img/toy.svg);
+  width: 60px;
+  height: 60px;
+}
