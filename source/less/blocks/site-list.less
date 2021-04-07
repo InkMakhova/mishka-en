@@ -1,9 +1,19 @@
 .site-list__item {
-  padding-right: 30px;
-  padding-left: 30px;
   box-sizing: border-box;
-  min-height: 79px;
-  box-shadow: 0 1px 0 0 @grey-light;
+
+  @media (max-width: @mobile-width-only) {
+    padding-right: 30px;
+    padding-left: 30px;
+    min-height: 79px;
+    box-shadow: 0 1px 0 0 @grey-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .site-list__link {
@@ -14,4 +24,18 @@
   line-height: 24px;
   padding: 0;
   margin: 0;
+  display: block;
+
+  @media (max-width: @mobile-width-only) {
+    width: 260px;
+    padding-left: 46px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
 }
