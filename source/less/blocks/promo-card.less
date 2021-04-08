@@ -1,0 +1,54 @@
+.promo-card__first-wrapper {
+  @media (min-width: @tablet-width) {
+    grid-area: info;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 150px;
+    padding-left: 175px;
+  }
+}
+
+.promo-card__second-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    grid-area: price;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 175px;
+  }
+}
+
+.promo-card__image {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: @tablet-width) {
+    grid-area: img;
+  }
+}
+
+.promo-card__text {
+  font-weight: 400;
+  .font(15px; 24px);
+  color: @grey-dark;
+}
+
+.promo-card__price {
+  font-weight: 700;
+  .font(17px; 24px);
+  color: @grey-dark;
+}
+
+.promo-card__link {
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 292px;
+  }
+}

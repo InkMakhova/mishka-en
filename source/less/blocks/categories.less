@@ -1,3 +1,33 @@
+.categories {
+  @media (min-width: @tablet-width) {
+    background-color: @grey;
+  }
+}
+
+.categories__wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
 .categories__list {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-grow: wrap;
+  }
+}
+
+.categories__item {
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+  }
 }

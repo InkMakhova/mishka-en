@@ -1,1 +1,15 @@
-/*min-nav.less*/
+.main-nav__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__extra-list {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+  }
+}
