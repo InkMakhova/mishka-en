@@ -162,8 +162,10 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__title-wrapper page-main__title-wrapper--index-page">
-        <h1 class="page-main__title main-title">Милые штуки<br> ручной<br> работы для дома</h1>
+      <div class="page-main__background-title-wrapper">
+        <div class="page-main__title-wrapper page-main__title-wrapper--index-page">
+          <h1 class="page-main__title main-title">Милые штуки<br> ручной<br> работы для дома</h1>
+        </div>
       </div>
 
       <section class="categories">
@@ -222,22 +224,22 @@
           <h2 class="about-us__title title">Коротко о нас:</h2>
           <ul class="about-us__list advantages reset-style">
             <li class="advantages__item advantages__item--eco">
-              Экологически чистые материалы
+              Экологически<br>чистые материалы
             </li>
             <li class="advantages__item advantages__item--money">
-              Скандинавский стиль по российской цене
+              Скандинавский стиль<br>по российской цене
             </li>
             <li class="advantages__item advantages__item--heart">
-              Увеличивает лайки на фотографиях
+              Увеличивает лайки<br>на фотографиях
             </li>
             <li class="advantages__item advantages__item--wool-ball">
-              Связано вручную с любовью и умилением
+              Связано вручную<br>с любовью и умилением
             </li>
             <li class="advantages__item advantages__item--airplane">
-              Поддержка отечественного производителя
+              Поддержка отечественного<br>производителя
             </li>
             <li class="advantages__item advantages__item--gift">
-              Поставляется в подарочной упаковке
+              Поставляется<br>в подарочной упаковке
             </li>
           </ul>
         </div>
@@ -251,19 +253,23 @@
             как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
             и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
-          <p class="reviews__text reviews__text--user-name">Анастасия Красильникова</p>
-          <p class="reviews__text reviews__text--user-nickname">@misssssiskras</p>
-          <div class="reviews__controls">
-            <button class="reviews__button-control reviews__button-control--prev" aria-label="Листать назад">
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-              </svg>
-            </button>
-            <button class="reviews__button-control reviews__button-control--next" aria-label="Листать вперед">
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
-              </svg>
-            </button>
+          <div class="reviews__bottom-part-wrapper">
+            <div class="reviews__text-wrapper">
+              <p class="reviews__text reviews__text--user-name">Анастасия Красильникова</p>
+              <p class="reviews__text reviews__text--user-nickname">@misssssiskras</p>
+            </div>
+            <div class="reviews__controls">
+              <button class="reviews__button-control reviews__button-control--prev" aria-label="Листать назад">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
+                </svg>
+              </button>
+              <button class="reviews__button-control reviews__button-control--next" aria-label="Листать вперед">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
           </div>
           <a class="reviews__link button" href="#">Написать</a>
         </div>
@@ -271,19 +277,25 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title title title--size--s">Контакты</h2>
-          <div class="contacts__email-wrapper">
-            <p class="contacts__text">e-mail:</p>
-            <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <h2 class="contacts__title title">Контакты</h2>
+          <div class="contacts__contacts-wrapper">
+            <div class="contacts__email-wrapper">
+              <p class="contacts__text">e-mail:</p>
+              <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__address-wrapper">
+              <p class="contacts__text">адрес:</p>
+              <p class="contacts__address">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
+            </div>
           </div>
-          <div class="contacts__adress-wrapper">
-            <p class="contacts__text">адрес:</p>
-            <p class="contacts__text">г. Санкт-Петербургул. Большая Конюшенная д. 19/8, офис 101</p>
+          <div class="contacts__map-wrapper">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871592122!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfi!4v1617021509698!5m2!1sru!2sfi"
+              width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871592122!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfi!4v1617021509698!5m2!1sru!2sfi"
-            width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
-          <a class="contacts__link button" href="#">Напишите нам</a>
+          <div class="contacts__link-wrapper">
+            <a class="contacts__link button" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>

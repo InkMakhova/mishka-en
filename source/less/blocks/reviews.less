@@ -1,45 +1,99 @@
+.reviews {
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 115px;
+  }
+}
+
 .reviews::after {
   display: block;
-  min-width: 320px;
   height: 6px;
   content: "";
-  background-image: url("../../img/zigzag-line.svg");
+  background-image: url("../img/zigzag-line.svg");
   background-position: center;
   background-repeat: repeat;
   margin-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    height: 17px;
+    background-image: url("../img/zigzag-line-desktop.svg");
+  }
 }
 
 .reviews__wrapper {
+  box-sizing: border-box;
+  min-width: 320px;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/review_back.png");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 150px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .reviews__user-review {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
+  .font(15px; 30px);
   color: @grey-dark;
+
+  @media (min-width: @tablet-width) {
+    .font(17px; 30px);
+    margin-bottom: 60px;
+  }
+}
+
+.reviews__bottom-part-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .reviews__text--user-name {
+  margin: 0;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  .font(17px; 24px);
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    .font(18px; 24px);
+  }
 }
 
 .reviews__text--user-nickname {
+  margin: 0;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
+  .font(17px; 30px);
   color: @grey-dark;
 }
 
 .reviews__controls {
-  min-width: 260px;
+  display: flex;
+  box-sizing: border-box;
+  width: 260px;
   min-height: 52px;
+  margin: 0 auto;
   border: 1px solid @grey-light;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    width: 150px;
+    margin: 0;
+  }
 }
 
 .reviews__button-control {
@@ -48,11 +102,28 @@
   box-sizing: border-box;
   min-height: 52px;
   padding-top: 13px;
-  padding-right: 40px;
+  padding-right: 36px;
   padding-bottom: 13px;
-  padding-left: 40px;
+  padding-left: 36px;
   background-color: @white;
   outline: 0;
   border: none;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+
+.reviews__link {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
+  }
 }

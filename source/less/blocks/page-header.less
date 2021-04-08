@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
   min-width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     box-shadow: 0 1px 0 0 @grey-light;
@@ -62,6 +63,8 @@
 }
 
 .page-header__main-nav {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     order: 2;
     position: absolute;
