@@ -1,8 +1,138 @@
+.order-form__fieldset-wrapper {
+  @media (min-width: @tablet-width) {
+    background-color: @grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 .order-form__fieldset {
-  outline: 0;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 223px;
+  }
+}
+
+.order-form__fieldset--without-wrapper {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.order-form__contacts-wrapper {
+  @media (min-width: @tablet-width) {
+    background-color: @grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.order-form__contact-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 223px;
+  }
+}
+
+.order-form__contact-wrapper:first-child {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.order-form__contact-wrapper .order-data__input {
+  @media (min-width: @tablet-width) {
+    background-color: @grey;
+  }
+}
+
+.order-form__contact-wrapper--align {
+  align-items: center;
+}
+
+
+.order-form__info-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-left: 110px;
+    padding-right: 223px;
+  }
+}
+
+.order-form__text-and-button-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 237px;
+    padding-right: 223px;
+  }
 }
 
 .order-form__small-text {
-  font-size: 14px;
-  line-height: 16px;
+  .font(14px; 16px);
+  color: @grey-dark;
+
+  @media (min-width: @tablet-width) {
+    .font(17px; 30px);
+  }
+}
+
+.order-form__button {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    margin: 0;
+  }
 }
