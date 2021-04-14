@@ -8,7 +8,6 @@
 }
 
 .advantages__item {
-  margin-bottom: 20px;
   font-weight: 700;
   .font(17px; 20px);
   color: @black;
@@ -39,5 +38,88 @@
     &:nth-of-type(1) {
       order: 1;
     }
+  }
+}
+
+.advantages__item {
+  &--eco {
+    margin-bottom: 28px;
+  }
+
+  &--money {
+    margin-bottom: 33px;
+  }
+
+  &--heart {
+    margin-bottom: 31px;
+  }
+
+  &--wool-ball {
+    margin-bottom: 32px;
+  }
+
+  &--airplane {
+    position: relative;
+    padding-top: 51px;
+    margin-bottom: 30px;
+  }
+
+  &--gift {
+    margin-bottom: 28px;
+  }
+}
+
+.advantages__item {
+  &::before {
+    display: block;
+  }
+
+  &--eco::before {
+    width: 33px;
+    height: 38px;
+    content: url("../img/eco.svg");
+    padding-left: 8px;
+    margin-bottom: 18px;
+  }
+
+  &--money::before {
+    width: 47px;
+    height: 27px;
+    content: url("../img/money.svg");
+    margin-bottom: 28px;
+  }
+
+  &--heart::before {
+    width: 34px;
+    height: 27px;
+    content: url("../img/heart.svg");
+    padding-left: 7px;
+    margin-bottom: 22px;
+  }
+
+  &--wool-ball::before {
+    width: 35px;
+    height: 34px;
+    content: url("../img/wool_ball.svg");
+    padding-left: 3px;
+    margin-bottom: 18px;
+  }
+
+  &--airplane::before {
+    width: 55px;
+    height: 23px;
+    content: url("../img/airplane.svg");
+    position: absolute;
+    margin-bottom: 28px;
+    top: 0;
+    left: -6px;
+  }
+
+  &--gift::before {
+    width: 33px;
+    height: 32px;
+    content: url("../img/gift.svg");
+    padding-left: 3px;
+    margin-bottom: 22px;
   }
 }

@@ -9,6 +9,12 @@
   }
 }
 
+.promo-card__characteristics-table {
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 28px;
+}
+
 .promo-card__second-wrapper {
   display: flex;
   flex-direction: column;
@@ -26,6 +32,7 @@
 .promo-card__image {
   width: 100%;
   height: 100%;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     grid-area: img;
@@ -33,15 +40,21 @@
 }
 
 .promo-card__text {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   .font(15px; 24px);
   color: @grey-dark;
 }
 
 .promo-card__price {
+  margin: 0;
   font-weight: 700;
   .font(17px; 24px);
   color: @grey-dark;
+  margin-bottom: 24px;
+  //pixel perfect
+  padding-right: 2px;
 }
 
 .promo-card__link {

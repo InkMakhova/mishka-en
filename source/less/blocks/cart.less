@@ -6,11 +6,30 @@
   line-height: 24px;
   margin: 0;
   position: relative;
+
+  &:hover {
+    color: rgba(@black, 0.6);
+  }
+
+  &:hover .cart__icon-shape {
+    opacity: 1;
+    fill: @green;
+  }
+
+  &:active {
+    color: rgba(@black, 0.3);
+  }
+
+  &:active .cart__icon-shape {
+    opacity: 0.3;
+    fill: @green;
+  }
 }
 
 .cart__icon {
   position: absolute;
   left: 0;
+  top: 2px;
 }
 
 .cart__text {

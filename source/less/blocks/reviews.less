@@ -23,7 +23,7 @@
 .reviews__wrapper {
   box-sizing: border-box;
   min-width: 320px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -44,10 +44,17 @@
   }
 }
 
+.reviews__title {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
 .reviews__user-review {
   font-weight: 400;
   .font(15px; 30px);
   color: @grey-dark;
+  margin: 0;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     .font(17px; 30px);
@@ -68,6 +75,7 @@
   font-weight: 700;
   .font(17px; 24px);
   color: @black;
+  margin-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     .font(18px; 24px);
@@ -76,6 +84,7 @@
 
 .reviews__text--user-nickname {
   margin: 0;
+  margin-bottom: 29px;
   font-weight: 400;
   .font(17px; 30px);
   color: @grey-dark;
@@ -87,6 +96,7 @@
   width: 260px;
   min-height: 52px;
   margin: 0 auto;
+  margin-bottom: 38px;
   border: 1px solid @grey-light;
 
   @media (min-width: @tablet-width) {
@@ -101,14 +111,26 @@
   vertical-align: middle;
   box-sizing: border-box;
   min-height: 52px;
-  padding-top: 13px;
-  padding-right: 36px;
-  padding-bottom: 13px;
-  padding-left: 36px;
+  padding-top: 12px;
+  padding-right: 43px;
+  padding-bottom: 9px;
+  padding-left: 37px;
   background-color: @white;
   outline: 0;
   border: none;
   margin: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: @focus auto 2px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-right: 18px;
