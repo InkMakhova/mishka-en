@@ -13,6 +13,10 @@
     background-image: url("../img/zigzag-line-desktop.svg");
     margin-top: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .popular__wrapper {
@@ -27,10 +31,24 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 58px;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+}
+
+.popular__wrapper::after {
+  @media (min-width: @desktop-width) {
+    height: 23px;
+    display: block;
+    width: 100%;
+    content: "";
+    background-image: url("../img/zigzag_middle_line_desktop.svg");
+    background-position: center;
+    background-repeat: round;
+    margin-top: 51px;
   }
 }
 
@@ -42,6 +60,11 @@
     column-gap: 42px;
     grid-template-areas: "info img"
       "price img";
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 525px;
+    column-gap: 58px;
   }
 }
 
@@ -57,8 +80,8 @@
   @media (min-width: @desktop-width) {
     flex-direction: row-reverse;
     position: absolute;
-    top: 60px;
-    padding-left: 30px;
+    top: 131px;
+    padding-left: 42px;
   }
 }
 
@@ -75,12 +98,12 @@
     width: 80px;
     .font(17px; 17px);
     padding-right: 23px;
-    padding-top: 6px;
+    padding-top: 9px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 50px;
+    margin-right: 30px;
     text-align: center;
   }
 }

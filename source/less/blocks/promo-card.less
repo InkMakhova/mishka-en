@@ -7,8 +7,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 150px;
+    padding-top: 166px;
     padding-left: 175px;
+    margin-bottom: 87px;
   }
 }
 
@@ -42,6 +43,11 @@
     padding-top: 12px;
     grid-area: img;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .promo-card__text {
@@ -54,6 +60,10 @@
   @media (min-width: @tablet-width) {
     .font(17px; 30px);
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -72,6 +82,10 @@
     //pixel perfect
     padding-right: 5px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .promo-card__link {
@@ -84,7 +98,9 @@
 }
 
 .promo-card__link.button {
-  font-size: 17px;
-  padding-top: 15px;
-  padding-bottom: 13px;
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
 }

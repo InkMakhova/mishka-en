@@ -10,10 +10,16 @@
     height: 24px;
     width: 100%;
     content: "";
-    background-image: url('../img/zigzag_fill_desktop.svg');
+    background-image: url("../img/zigzag_fill_desktop.svg");
     background-repeat: round;
     position: absolute;
     bottom: -11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/zigzag_fill_big_desktop.svg");
+    height: 34px;
+    bottom: -15px;
   }
 }
 

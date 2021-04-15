@@ -26,4 +26,3 @@ function toggleAriaLabel() {
 toggleMenu();
 button.addEventListener('click', toggleMenu);
 button.addEventListener('click', toggleAriaLabel);
-
