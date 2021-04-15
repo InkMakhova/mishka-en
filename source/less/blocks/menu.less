@@ -1,3 +1,9 @@
+.menu--closed {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
 .menu__item {
   box-sizing: border-box;
   display: flex;
@@ -13,6 +19,8 @@
   @media (min-width: @tablet-width) {
     box-shadow: none;
     min-height: 89px;
+    padding-left: 43px;
+    padding-right: 39px;
   }
 }
 
@@ -45,7 +53,8 @@
 
 .menu__item .search__icon {
   @media (min-width: @tablet-width) {
-    left: -9px;
+    left: -10px;
+    top: -10px;
   }
 }
 

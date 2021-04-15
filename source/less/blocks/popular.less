@@ -3,10 +3,16 @@
   min-width: 320px;
   height: 6px;
   content: "";
-  background-image: url("../../img/zigzag-line.svg");
+  background-image: url("../img/zigzag-line.svg");
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: round;
   margin-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    height: 17px;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    margin-top: 30px;
+  }
 }
 
 .popular__wrapper {
@@ -17,6 +23,7 @@
   @media (min-width: @tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 51px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,7 +37,7 @@
 .popular__promo-card-wrapper {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 334px;
     grid-template-rows: max-content max-content;
     column-gap: 42px;
     grid-template-areas: "info img"
@@ -44,6 +51,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,6 +74,9 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     .font(17px; 17px);
+    padding-right: 23px;
+    padding-top: 6px;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {

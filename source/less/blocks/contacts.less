@@ -1,6 +1,6 @@
 .contacts__wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 38px;
+  padding-bottom: 39px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -25,6 +25,7 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     padding-left: 50px;
@@ -80,10 +81,12 @@
 
 .contacts__email-wrapper {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .contacts__address-wrapper {
   display: flex;
+  margin-bottom: 62px;
 }
 
 .contacts__text {
@@ -115,7 +118,18 @@
   margin: 0;
   color: @grey-dark;
   text-decoration-line: underline;
+  text-underline-offset: 5px;
   text-decoration-color: @green-light;
+
+  &:hover {
+    color: @green-puerto-rico;
+    text-decoration-color: @green-puerto-rico;
+  }
+
+  &:active {
+    color: @green-puerto-rico;
+    text-decoration-color: rgba(@green-puerto-rico, 0.1);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -126,7 +140,7 @@
   overflow: hidden;
   position: relative;
   height: 454px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     height: 457px;
