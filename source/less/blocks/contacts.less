@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 50px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,7 +31,7 @@
   @media (min-width: @tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,8 +46,8 @@
     height: 81px;
     content: url("../img/flag.svg");
     position: absolute;
-    right: 50px;
-    top: 30px;
+    right: 53px;
+    top: 27px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,7 +71,7 @@
     font-size: 17px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,6 +88,10 @@
 .contacts__address-wrapper {
   display: flex;
   margin-bottom: 62px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__text {
@@ -97,6 +102,7 @@
   min-width: 76px;
 
   @media (min-width: @tablet-width) {
+    min-width: 78px;
     font-size: 17px;
   }
 }
@@ -132,11 +138,13 @@
   }
 
   @media (min-width: @tablet-width) {
+    text-underline-offset: 7px;
     font-size: 17px;
   }
 }
 
 .contacts__map-wrapper {
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
   height: 454px;
@@ -144,6 +152,7 @@
 
   @media (min-width: @tablet-width) {
     height: 457px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -173,5 +182,14 @@
     margin: 0;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+.contacts__link.button {
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-right: 2px;
   }
 }

@@ -46,7 +46,8 @@
     margin-bottom: 28px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 56px;
+      position: relative;
+      margin-bottom: 110px;
     }
   }
 
@@ -54,19 +55,25 @@
     margin-bottom: 33px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 62px;
+      position: relative;
+      margin-bottom: 110px;
     }
   }
 
   &--heart {
     margin-bottom: 31px;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+    }
   }
 
   &--wool-ball {
     margin-bottom: 32px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 58px;
+      position: relative;
+      margin-bottom: 110px;
       //pixel perfect
       padding-left: 1px;
     }
@@ -76,10 +83,19 @@
     position: relative;
     padding-top: 51px;
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
+      margin-bottom: 111px;
+    }
   }
 
   &--gift {
     margin-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+    }
   }
 }
 
@@ -96,8 +112,9 @@
     margin-bottom: 18px;
 
     @media (min-width: @tablet-width) {
-      //pixel perfect
-      margin-bottom: 19px;
+      position: absolute;
+      top: -57px;
+      left: 0;
     }
   }
 
@@ -108,8 +125,9 @@
     margin-bottom: 28px;
 
     @media (min-width: @tablet-width) {
-      //pixel perfect
-      margin-bottom: 27px;
+      position: absolute;
+      top: -54px;
+      left: 0;
     }
   }
 
@@ -119,6 +137,12 @@
     content: url("../img/heart.svg");
     padding-left: 7px;
     margin-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: -48px;
+      left: 1px;
+    }
   }
 
   &--wool-ball::before {
@@ -129,9 +153,9 @@
     margin-bottom: 18px;
 
     @media (min-width: @tablet-width) {
-      //pixel perfect
-      padding-top: 4px;
-      margin-bottom: 20px;
+      position: absolute;
+      top: -53px;
+      left: 0;
     }
   }
 
@@ -143,6 +167,10 @@
     margin-bottom: 28px;
     top: 0;
     left: -6px;
+
+    @media (min-width: @tablet-width) {
+      top: -51px;
+    }
   }
 
   &--gift::before {
@@ -151,5 +179,11 @@
     content: url("../img/gift.svg");
     padding-left: 3px;
     margin-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: -54px;
+      left: 0;
+    }
   }
 }

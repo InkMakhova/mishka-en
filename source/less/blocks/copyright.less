@@ -1,6 +1,10 @@
 .copyright {
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-start;
+  }
 }
 
 .copyright__text {
@@ -9,8 +13,23 @@
   line-height: 18px;
   color: @black;
   margin-right: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 11px;
+    margin-right: 27px;
+  }
 }
 
 .copyright__link {
   padding-top: 5px;
+
+  &:hover .copyright__icon-shape {
+    fill: @green-puerto-rico;
+  }
+
+  &:active .copyright__icon-shape {
+    fill: @green-puerto-rico;
+    opacity: 0.3;
+  }
 }
