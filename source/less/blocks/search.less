@@ -6,11 +6,26 @@
   line-height: 24px;
   margin: 0;
   position: relative;
+
+  &:focus .search__icon {
+    outline: @focus auto 2px;
+  }
+
+  &:hover .search__icon-shape {
+    opacity: 1;
+    fill: @green;
+  }
+
+  &:active .search__icon-shape {
+    opacity: 0.3;
+    fill: @green;
+  }
 }
 
 .search__icon {
   position: absolute;
-  left: 0;
+  left: 2px;
+  top: 3px;
 }
 
 .search__text {

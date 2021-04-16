@@ -1,6 +1,5 @@
 .about-us {
   box-sizing: border-box;
-  width: 320px;
   margin: 0 auto;
   padding-top: 30px;
   padding-left: 30px;
@@ -11,12 +10,14 @@
     width: inherit;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 56px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
+    padding-top: 68px;
   }
 }
 
@@ -24,5 +25,18 @@
   @media (min-width: @desktop-width) {
     padding-left: 175px;
     padding-right: 200px;
+  }
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 98px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 97px;
   }
 }

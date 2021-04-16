@@ -1,12 +1,21 @@
 .promo-card__first-wrapper {
+  margin-bottom: 28px;
+
   @media (min-width: @tablet-width) {
+    margin-bottom: 36px;
     grid-area: info;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 150px;
+    padding-top: 166px;
     padding-left: 175px;
+    margin-bottom: 87px;
   }
+}
+
+.promo-card__characteristics-table {
+  width: 100%;
+  border-spacing: 0;
 }
 
 .promo-card__second-wrapper {
@@ -26,22 +35,57 @@
 .promo-card__image {
   width: 100%;
   height: 100%;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 404px;
+    padding-top: 12px;
     grid-area: img;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: 636px;
   }
 }
 
 .promo-card__text {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   .font(15px; 24px);
   color: @grey-dark;
+
+  @media (min-width: @tablet-width) {
+    .font(17px; 30px);
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo-card__price {
+  margin: 0;
   font-weight: 700;
   .font(17px; 24px);
   color: @grey-dark;
+  margin-bottom: 24px;
+  //pixel perfect
+  padding-right: 2px;
+
+  @media (min-width: @tablet-width) {
+    .font(20px; 24px);
+    margin-bottom: 32px;
+    //pixel perfect
+    padding-right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .promo-card__link {
@@ -50,5 +94,13 @@
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     width: 292px;
+  }
+}
+
+.promo-card__link.button {
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 13px;
   }
 }

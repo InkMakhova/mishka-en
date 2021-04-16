@@ -1,6 +1,19 @@
 .toggle {
   box-sizing: border-box;
+  width: 30px;
+  height: 20px;
   background-color: @white;
+  background-image: url("../img/menu-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   outline: 0;
   border: none;
+
+  &:focus {
+    outline: @focus auto 2px;
+  }
+}
+
+.toggle--nojs {
+  display: none;
 }

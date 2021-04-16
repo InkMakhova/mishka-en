@@ -1,7 +1,11 @@
-.main-nav__list {
-  @media (min-width: @tablet-width) {
-    display: flex;
+.main-nav--closed .main-nav__wrapper {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
+}
+
+.main-nav--closed .toggle {
+  background-image: url("../img/menu.svg");
 }
 
 .main-nav__extra-list {
@@ -10,6 +14,6 @@
   @media (min-width: @desktop-width) {
     display: flex;
     position: absolute;
-    bottom: -40px;
+    bottom: -43px;
   }
 }

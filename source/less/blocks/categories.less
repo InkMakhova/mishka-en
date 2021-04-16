@@ -1,6 +1,25 @@
 .categories {
   @media (min-width: @tablet-width) {
     background-color: @grey;
+    position: relative;
+  }
+}
+
+.categories::after {
+  @media (min-width: @tablet-width) {
+    height: 24px;
+    width: 100%;
+    content: "";
+    background-image: url("../img/zigzag_fill_desktop.svg");
+    background-repeat: round;
+    position: absolute;
+    bottom: -11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/zigzag_fill_big_desktop.svg");
+    height: 34px;
+    bottom: -15px;
   }
 }
 
@@ -21,13 +40,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-grow: wrap;
-  }
-}
-
-.categories__item {
-  @media (min-width: @tablet-width) {
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -1,5 +1,6 @@
 .category {
   box-sizing: border-box;
+  position: relative;
 }
 
 .category--interior {
@@ -15,12 +16,16 @@
   font-weight: 700;
   .font(19px; 24px);
   color: @white;
-  width: 260px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
   min-height: 103px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  //pixel perfect
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     width: inherit;
@@ -28,6 +33,25 @@
     padding-left: 36px;
     padding-right: 36px;
     justify-content: space-between;
+    .font(20px; 30px);
+    //pixel perfect
+    padding-bottom: 10px;
+  }
+
+  &:hover,
+  &:active {
+    min-height: 124px;
+    margin-top: -5px;
+  }
+
+  &--interior:hover::after,
+  &--toy:hover::after {
+    opacity: 0.7;
+  }
+
+  &--interior:active::after,
+  &--toy:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -35,12 +59,28 @@
   content: url("../img/interior.svg");
   width: 40px;
   height: 62px;
-  margin-left: 30px;
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    top: 29px;
+    right: 37px;
+  }
 }
 
 .category__link--toy::after {
   content: url("../img/toy.svg");
   width: 60px;
   height: 60px;
-  margin-left: 30px;
+  position: absolute;
+  top: 21px;
+  right: 28px;
+  opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    right: 34px;
+  }
 }

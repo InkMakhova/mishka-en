@@ -11,6 +11,7 @@
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
+    box-shadow: none;
   }
 }
 
@@ -32,10 +33,10 @@
 
 .page-header__logo-wrapper {
   box-sizing: border-box;
+  min-height: 79px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
   box-shadow: 0 1px 0 0 @grey-light;
   text-align: center;
 
@@ -52,9 +53,19 @@
   }
 }
 
+.page-header__logo.logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__toggle {
   position: absolute;
-  right: 30px;
+  right: 26px;
   top: 28px;
 
   @media (min-width: @tablet-width) {
@@ -68,7 +79,7 @@
   @media (min-width: @tablet-width) {
     order: 2;
     position: absolute;
-    bottom: -50px;
+    bottom: -44px;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,8 +100,8 @@
 
 .page-header__text {
   position: absolute;
-  bottom: -55px;
-  right: 52px;
+  bottom: -58px;
+  right: 50px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -98,5 +109,9 @@
 
   @media (max-width: @mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 51px;
   }
 }
