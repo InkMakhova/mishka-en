@@ -1,0 +1,102 @@
+.order-type {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.order-type__legend {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50px;
+    top: 18px;
+    width: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 111px;
+    top: 20px;
+  }
+}
+
+.order-type__list {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+  }
+}
+
+.order-type__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.order-type__radio-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.order-type__radio-button-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+    margin-right: 27px;
+  }
+}
+
+.order-type__radio-button-icon {
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.order-type__radio-button:checked + .order-type__radio-button-icon-wrapper .radio-icon__inside-shape {
+  fill: @green-light;
+}
+
+.order-type__radio-button:hover + .order-type__radio-button-icon-wrapper .radio-icon__outside-shape {
+  stroke: @green-light;
+}
+
+.order-type__radio-button:active + .order-type__radio-button-icon-wrapper .radio-icon__outside-shape {
+  stroke: @black;
+  opacity: 0.1;
+}
+
+.order-type__radio-button:checked:active + .order-type__radio-button-icon-wrapper .radio-icon__outside-shape {
+  stroke: @black;
+  opacity: 0.1;
+}
+
+.order-type__radio-button:checked:focus + .order-type__radio-button-icon-wrapper {
+  outline: @focus solid 2px;
+}

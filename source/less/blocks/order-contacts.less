@@ -1,0 +1,102 @@
+.order-contacts {
+  margin: 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.order-contacts__contact-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 228px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 135px;
+  }
+}
+
+.order-contacts__input {
+  min-height: 52px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0;
+  border-bottom: 2px solid @black;
+  width: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  .font(17px; 18px);
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    .font(19px; 18px);
+    padding-bottom: 3px;
+    padding-right: 60px;
+    padding-left: 19px;
+    background-color: @grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 60px;
+  }
+}
+
+.order-contacts__input::placeholder {
+  opacity: 0.3;
+}
+
+.order-contacts__phone-icon {
+  position: absolute;
+  right: 37px;
+  top: 30px;
+
+  @media (min-width: @tablet-width) {
+    right: 76px;
+    top: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 233px;
+  }
+}
+
+.order-contacts__email-icon {
+  position: absolute;
+  right: 34px;
+  top: 36px;
+
+  @media (min-width: @tablet-width) {
+    right: 72px;
+    top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 229px;
+  }
+}
+
+.order-contacts__input:hover,
+.order-contacts__input:focus {
+  border-bottom-color: @green-light;
+  outline: none;
+}
+
+.order-contacts__input:hover + .contact-icon .contact-icon__shape,
+.order-contacts__input:focus + .contact-icon .contact-icon__shape {
+  fill: @green-light;
+  opacity: 1;
+}
+
+.order-contacts__input:hover + .contact-icon .contact-icon__g,
+.order-contacts__input:focus + .contact-icon .contact-icon__g {
+  opacity: 1;
+}
