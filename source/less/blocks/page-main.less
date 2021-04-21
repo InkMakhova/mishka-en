@@ -14,42 +14,66 @@
   border-top: 1px solid rgba(@black, 0.1);
 }
 
+.page-main__background-title-wrapper--decoration {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.page-main__background-title-wrapper--decoration::after {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 100vw;
+    background-image: url("../img/zigzag_fill_desktop.svg");
+    background-position: center;
+    background-repeat: repeat;
+    bottom: -3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 34px;
+    background-image: url("../../img/zigzag_fill_form_desktop.svg");
+  }
+}
+
 .page-main__title-wrapper {
   max-width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 70px;
   text-align: center;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 152px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 153px;
-  }
 }
 
-.page-main__title-wrapper--index-height {
+.page-main__title-wrapper--index-align {
   height: 283px;
   background-image: url("../img/main_background_mobile.jpg");
   background-position: center -17px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
+    padding-top: 152px;
     min-height: 627px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 153px;
     min-height: 626px;
   }
 }
 
-.page-main__title-wrapper--height {
+.page-main__title-wrapper--align {
   min-height: 177px;
 
   @media (min-width: @tablet-width) {
-    min-height: 226px;
+    padding-top: 97px;
+    min-height: 233px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 267px;
   }
 }
 
