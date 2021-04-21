@@ -3,7 +3,12 @@
 }
 
 .video-player__link {
+  display: block;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    height: 455px;
+  }
 }
 
 .video-player__thumb {
@@ -13,6 +18,7 @@
 
 .video-player__play-button {
   background-color: transparent;
+  padding: 0;
   border: none;
   position: absolute;
   top: 0;
@@ -20,4 +26,26 @@
   bottom: 0;
   left: 0;
   margin: auto;
+
+  @media (min-width: @desktop-width) {
+    width: 101px;
+    height: 77px;
+  }
+
+  &:hover {
+    .button-size (101px; 77px; 1.2);
+  }
+
+  &:hover .video-player__play-icon {
+    .button-size (101px; 77px; 1.2);
+  }
+
+  &:active {
+    .button-size (101px; 77px; 0.8);
+  }
+
+  &:active .video-player__play-icon {
+    .button-size (101px; 77px; 0.8);
+    opacity: 0.3;
+  }
 }
