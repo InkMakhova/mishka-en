@@ -1,0 +1,108 @@
+.order-color {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.order-color__legend {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50px;
+    top: 18px;
+    width: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 111px;
+    top: 20px;
+  }
+}
+
+.order-color__list {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 59px;
+    row-gap: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 25px;
+  }
+}
+
+.order-color__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.order-color__checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.order-color__checkbox-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+    margin-right: 29px;
+  }
+}
+
+.order-color__checkbox-icon {
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+
+.order-color__checkbox:checked + .order-color__checkbox-icon-wrapper .checkbox-icon__check {
+  fill: @black;
+}
+
+.order-color__checkbox:hover + .order-color__checkbox-icon-wrapper .checkbox-icon__rect {
+  stroke: @green-light;
+}
+
+.order-color__checkbox:active + .order-color__checkbox-icon-wrapper .checkbox-icon__rect {
+  stroke: @grey-dark;
+  opacity: 0.3;
+}
+
+.order-color__checkbox:checked:active + .order-color__checkbox-icon-wrappe .checkbox-icon__rect {
+  stroke: @grey-dark;
+  opacity: 0.3;
+}
+
+.order-color__checkbox:focus + .order-color__checkbox-icon-wrapper {
+  outline: @green-light auto 2px;
+}

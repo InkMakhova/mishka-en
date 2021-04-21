@@ -1,0 +1,22 @@
+.legend-style {
+  font-weight: 700;
+  .font(17px; 16px);
+  text-transform: uppercase;
+  color: @green;
+}
+
+.legend-style::after {
+  content: "";
+  min-width: 50px;
+  width: 100%;
+  height: 1px;
+  background-color: @green-light;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+  margin-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
