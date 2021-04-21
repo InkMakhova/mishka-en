@@ -11,6 +11,15 @@
     width: 316px;
     box-sizing: border-box;
   }
+
+
+  &:hover .product-card__wrapper {
+    box-shadow: 0px 6px 10px rgba(@black, 0.1);
+  }
+
+  &:active .product-card__wrapper {
+    box-shadow: 0px 3px 5px rgba(@black, 0.1);
+  }
 }
 
 .product-card__link {
@@ -18,14 +27,6 @@
 
   @media (min-width: @desktop-width) {
     height: 461px;
-  }
-
-  &:hover + .product-card__wrapper {
-    box-shadow: 0px 6px 10px rgba(@black, 0.1);
-  }
-
-  &:active + .product-card__wrapper {
-    box-shadow: 0px 3px 5px rgba(@black, 0.1);
   }
 }
 
