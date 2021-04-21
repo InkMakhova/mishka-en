@@ -1,12 +1,12 @@
 .catalog__wrapper {
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 67px;
+    padding-top: 69px;
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 53px;
@@ -15,13 +15,23 @@
   @media (min-width: @desktop-width) {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 111px;
+    padding-top: 113px;
     padding-bottom: 57px;
   }
 }
 
+.catalog__item {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+  }
+}
+
 .catalog__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
