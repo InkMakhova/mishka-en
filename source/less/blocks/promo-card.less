@@ -25,10 +25,19 @@
 
   @media (min-width: @tablet-width) {
     grid-area: price;
+    margin-bottom: -12px;
+    align-self: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 175px;
+  }
+}
+
+.promo-card picture {
+  @media (min-width: @tablet-width) {
+    grid-area: img;
+    height: 404px;
   }
 }
 
@@ -41,10 +50,11 @@
     width: 334px;
     height: 404px;
     padding-top: 12px;
-    grid-area: img;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 0;
     width: 525px;
     height: 636px;
   }
@@ -93,7 +103,8 @@
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
-    width: 292px;
+    min-width: 292px;
+    width: 100%;
   }
 }
 

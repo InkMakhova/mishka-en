@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 300px 300px;
+    column-gap: 35px;
+  }
+
+  @media (min-width: @desktop-width)  {
     column-gap: 50px;
   }
 }
@@ -81,13 +85,22 @@
   &--airplane {
     position: relative;
     padding-top: 51px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     @media (min-width: @tablet-width) {
       padding-top: 0;
       margin-bottom: 111px;
     }
   }
+
+  &--gift {
+      position: relative;
+      margin-bottom: 30px;
+
+      @media (min-width: @tablet-width) {
+        padding-top: 0;
+      }
+    }
 
   &::before {
     display: block;

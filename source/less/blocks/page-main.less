@@ -10,7 +10,7 @@
 }
 
 .page-main__background-title-wrapper {
-  background-color: @grey;
+  background-color: @grey-snow;
   border-top: 1px solid rgba(@black, 0.1);
 }
 
@@ -35,7 +35,7 @@
 
   @media (min-width: @desktop-width) {
     height: 34px;
-    background-image: url("../../img/zigzag_fill_form_desktop.svg");
+    background-image: url("../img/zigzag_fill_form_desktop.svg");
   }
 }
 
@@ -49,18 +49,32 @@
 
 .page-main__title-wrapper--index-align {
   height: 283px;
-  background-image: url("../img/main_background_mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-position: center -17px;
   background-repeat: no-repeat;
+  background-size: 320px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 152px;
     min-height: 627px;
+    background-image: url("../img/hero-desktop.jpg");
+    background-size: 1150px;
+    background-position-y: -3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 153px;
     min-height: 626px;
+    background-size: 1150px;
+    background-position-y: 0;
   }
 }
 
