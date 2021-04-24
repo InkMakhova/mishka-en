@@ -3,12 +3,11 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 300px 300px;
-    column-gap: 35px;
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: @desktop-width)  {
-    column-gap: 50px;
+  @media (min-width: @desktop-width) {
+    column-gap: 23px;
   }
 }
 
@@ -94,13 +93,13 @@
   }
 
   &--gift {
-      position: relative;
-      margin-bottom: 30px;
+    position: relative;
+    margin-bottom: 30px;
 
-      @media (min-width: @tablet-width) {
-        padding-top: 0;
-      }
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
     }
+  }
 
   &::before {
     display: block;
