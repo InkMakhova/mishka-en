@@ -1,24 +1,6 @@
 .category {
   box-sizing: border-box;
   position: relative;
-
-  &:first-child {
-    @media (min-width: @tablet-width) {
-      margin-right: 1px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-right: 0;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    box-shadow: 0 4px 4px rgba(@black, 0.25), 0 4px 4px rgba(@black, 0.25);
-  }
-
-  @media (min-width: @desktop-width) {
-    box-shadow: none;
-  }
 }
 
 .category--interior {
