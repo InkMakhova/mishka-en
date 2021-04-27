@@ -34,7 +34,7 @@
   margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,10 +43,12 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
