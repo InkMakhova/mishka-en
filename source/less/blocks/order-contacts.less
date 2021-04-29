@@ -54,6 +54,17 @@
   opacity: 0.3;
 }
 
+.order-contacts__input:hover,
+.order-contacts__input:focus {
+  border-bottom-color: @green-light;
+  outline: none;
+}
+
+.order-contacts__phone-icon,
+.order-contacts__email-icon {
+  opacity: 0.2;
+}
+
 .order-contacts__phone-icon {
   position: absolute;
   right: 37px;
@@ -84,19 +95,8 @@
   }
 }
 
-.order-contacts__input:hover,
-.order-contacts__input:focus {
-  border-bottom-color: @green-light;
-  outline: none;
-}
-
-.order-contacts__input:hover + .contact-icon .contact-icon__shape,
-.order-contacts__input:focus + .contact-icon .contact-icon__shape {
+.order-contacts__input:hover + .contact-icon,
+.order-contacts__input:focus + .contact-icon {
   fill: @green-light;
-  opacity: 1;
-}
-
-.order-contacts__input:hover + .contact-icon .contact-icon__g,
-.order-contacts__input:focus + .contact-icon .contact-icon__g {
   opacity: 1;
 }
