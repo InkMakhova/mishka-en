@@ -7,26 +7,27 @@
   margin: 0;
   position: relative;
 
-  &:hover {
-    color: rgba(@black, 0.6);
-  }
-
-  &:hover .cart__icon-shape {
-    opacity: 1;
-    fill: @green;
-  }
-
   &:active {
     color: rgba(@black, 0.3);
   }
 
-  &:active .cart__icon-shape {
+  &:hover {
+    color: rgba(@black, 0.6);
+  }
+
+  &:hover .cart__icon {
+    opacity: 1;
+    fill: @green;
+  }
+
+  &:active .cart__icon {
     opacity: 0.3;
     fill: @green;
   }
 }
 
 .cart__icon {
+  opacity: 0.2;
   position: absolute;
   left: 0;
   top: 2px;

@@ -7,16 +7,20 @@
   margin: 0;
   position: relative;
 
+  &:active {
+    color: rgba(@black, 0.3);
+  }
+
   &:focus .search__icon {
     outline: @focus auto 2px;
   }
 
-  &:hover .search__icon-shape {
+  &:hover .search__icon {
     opacity: 1;
     fill: @green;
   }
 
-  &:active .search__icon-shape {
+  &:active .search__icon {
     opacity: 0.3;
     fill: @green;
   }
@@ -24,6 +28,7 @@
 
 .search__icon {
   position: absolute;
+  opacity: 0.2;
   left: 2px;
   top: 3px;
 }
