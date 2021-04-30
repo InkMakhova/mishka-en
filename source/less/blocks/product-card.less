@@ -142,6 +142,10 @@
   }
 }
 
+.product-card__cart-icon {
+  opacity: 0.2;
+}
+
 .product-card__cart-link {
   @media (min-width: @tablet-width) {
     padding-bottom: 3px;
@@ -151,12 +155,12 @@
     padding-right: 3px;
   }
 
-  &:hover .product-card__icon-shape {
+  &:hover .product-card__cart-icon {
     fill: @green;
     opacity: 1;
   }
 
-  &:active .product-card__icon-shape {
+  &:active .product-card__cart-icon {
     fill: @green;
     opacity: 0.3;
   }
