@@ -8,7 +8,7 @@
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/152.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff2" crossorigin="anonymous">
@@ -119,8 +119,11 @@
               </table>
             </div>
             <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <source srcset="img/triple_set_mobile.webp 1x, img/triple_set_mobile@2x.webp 2x" type="image/webp">
               <img class="promo-card__image" src="img/triple_set_mobile.jpg" srcset="img/triple_set_mobile.jpg 1x, img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Товар недели: вязаные корзинки">
             </picture>
             <div class="promo-card__second-wrapper">
@@ -268,6 +271,6 @@
       </form>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

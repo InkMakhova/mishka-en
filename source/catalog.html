@@ -8,7 +8,7 @@
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/152.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff2" crossorigin="anonymous">
@@ -84,8 +84,11 @@
               <div class="catalog__item-wrapper product-card">
                 <a class="product-card__link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" srcset="img/product1_desktop.webp 1x, img/product1_desktop@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1150px)" srcset="img/product1_desktop.jpg 1x, img/product1_desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/product1_tablet.webp 1x, img/product1_tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/product1_tablet.jpg 1x, img/product1_tablet@2x.jpg 2x">
+                    <source srcset="img/img/product1_mobile.webp 1x, img/product1_mobile@2x.webp 2x" type="image/webp">
                     <img class="product-card__image" src="img/product1_mobile.jpg" srcset="img/product1_mobile.jpg 1x, img/product1_mobile@2x.jpg 2x" width="258" height="194" alt="Зайчик-попрыгайчик">
                   </picture>
                 </a>
@@ -114,8 +117,11 @@
               <div class="catalog__item-wrapper product-card">
                 <a class="product-card__link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" srcset="img/product2_desktop.webp 1x, img/product2_desktop@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1150px)" srcset="img/product2_desktop.jpg 1x, img/product2_desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/product2_tablet.webp 1x, img/product2_tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/product2_tablet.jpg 1x, img/product2_tablet@2x.jpg 2x">
+                    <source srcset="img/img/product2_mobile.webp 1x, img/product2_mobile@2x.webp 2x" type="image/webp">
                     <img class="product-card__image" src="img/product2_mobile.jpg" srcset="img/product2_mobile.jpg 1x, img/product2_mobile@2x.jpg 2x" width="258" height="194" alt="Корзинка для белья">
                   </picture>
                 </a>
@@ -144,8 +150,11 @@
               <div class="catalog__item-wrapper product-card">
                 <a class="product-card__link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" srcset="img/product3_desktop.webp 1x, img/product3_desktop@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1150px)" srcset="img/product3_desktop.jpg 1x, img/product3_desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/product3_tablet.webp 1x, img/product3_tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/product3_tablet.jpg 1x, img/product3_tablet@2x.jpg 2x">
+                    <source srcset="img/img/product3_mobile.webp 1x, img/product3_mobile@2x.webp 2x" type="image/webp">
                     <img class="product-card__image" src="img/product3_mobile.jpg" srcset="img/product3_mobile.jpg 1x, img/product3_mobile@2x.jpg 2x" width="258" height="194" alt="Большая корзинка для игрушек">
                   </picture>
                 </a>
@@ -180,8 +189,11 @@
           <div class="production-process__video-player-wrapper video-player">
             <a class="video-player__link">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <source srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x" type="image/webp">
                 <img class="video-player__thumb" width="260" height="150" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
               </picture>
             </a>
@@ -257,6 +269,6 @@
       </form>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
