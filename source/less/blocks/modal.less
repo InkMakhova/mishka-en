@@ -28,11 +28,11 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 14px;
+}
 
-  &.title {
-    @media (min-width: @tablet-width) {
-      .font(30px; 57px);
-    }
+.modal__title.title {
+  @media (min-width: @tablet-width) {
+    .font(30px; 57px);
   }
 }
 
@@ -80,13 +80,13 @@
   border: none;
   margin: 0 auto;
 
-  &.button {
-    .font(17px; 16px);
-  }
-
   @media (min-width: @tablet-width) {
     width: 350px;
   }
+}
+
+.modal__button.button {
+  .font(17px; 16px);
 }
 
 .modal--show {
