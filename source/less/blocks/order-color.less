@@ -89,11 +89,16 @@
   fill: @black;
 }
 
+.order-color__checkbox:checked:disabled + .order-color__checkbox-icon-wrapper .checkbox-icon__check {
+  opacity: 0.3;
+}
+
 .order-color__checkbox:hover + .order-color__checkbox-icon-wrapper .checkbox-icon__rect {
   stroke: @green-light;
 }
 
-.order-color__checkbox:active + .order-color__checkbox-icon-wrapper .checkbox-icon__rect {
+.order-color__checkbox:active + .order-color__checkbox-icon-wrapper .checkbox-icon__rect,
+.order-color__checkbox:disabled + .order-color__checkbox-icon-wrapper .checkbox-icon__rect {
   stroke: @grey-dark;
   opacity: 0.3;
 }
