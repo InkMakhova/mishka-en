@@ -27,9 +27,10 @@ button.addEventListener('click', toggleMenu);
 button.addEventListener('click', toggleAriaLabel);
 
 //открытие и закрытие модального окна
-let popular = document.querySelector('.popular');
+//let popular = document.querySelector('.popular');
 let page = document.querySelector('.page__body');
-let linkOpenModal = popular.querySelector('.promo-card__link');
+let linkOpenModal = document.querySelector('.promo-card__link');
+let linkAddToCart = document.querySelectorAll('.product-card__cart-link');
 let modal = document.querySelector('.modal');
 let form = modal.querySelector('.modal__form');
 let mouseDownInModal = false;
@@ -40,6 +41,13 @@ linkOpenModal.addEventListener('click', function(evt) {
   modal.classList.add('modal--show');
 });
 
+for (let i = 0; i < linkAddToCart.length; i++) {
+  linkAddToCart[i].addEventListener('click', function(evt) {
+    evt.preventDefault();
+    modal.classList.add('modal--show');
+  });
+}
+
 //закрытие
 window.addEventListener('keydown', function(evt) {
   if (evt.code === 'Escape') {
@@ -47,7 +55,7 @@ window.addEventListener('keydown', function(evt) {
   }
 });
 
-page.addEventListener('mousedown', function(evt) {
+/*page.addEventListener('mousedown', function(evt) {
   mouseDownInModal = false;
 });
 
@@ -59,7 +67,7 @@ window.addEventListener('mousedown', function(evt) {
   if (mouseDownInModal === false) {
     modal.classList.remove('modal--show');
   }
-});
+});*/
 
 //отправка формы
 form.addEventListener('submit', function(evt) {
