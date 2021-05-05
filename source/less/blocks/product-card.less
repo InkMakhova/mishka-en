@@ -25,6 +25,10 @@
   display: block;
   line-height: 0;
 
+  &:focus {
+    outline: @green-dark auto 2px;
+  }
+
   @media (min-width: @desktop-width) {
     height: 461px;
   }
@@ -77,6 +81,10 @@
 .product-card__name-product-link {
   color: @black;
   text-decoration: none;
+
+  &:focus {
+    outline: @green-dark auto 2px;
+  }
 
   &:hover .product-card__title {
     opacity: 0.6;
@@ -163,5 +171,9 @@
   &:active .product-card__cart-icon {
     fill: @green;
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: @green-dark auto 2px;
   }
 }

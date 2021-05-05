@@ -8,7 +8,11 @@
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/152.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -47,7 +51,7 @@
           <li class="menu__item">
             <a class="menu__link search" href="#" aria-label="Поиск">
               <svg class="search__icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#search__icon"></use>
+                <use xlink:href="img/sprite.svg#search"></use>
               </svg>
               <p class="search__text">Поиск по сайту</p>
             </a>
@@ -55,7 +59,7 @@
           <li class="menu__item">
             <a class="menu__link cart" href="#" aria-label="Корзина">
               <svg class="cart__icon" width="21" height="18">
-                <use xlink:href="img/sprite.svg#cart__icon"></use>
+                <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
               <p class="cart__text">Корзина: пока пуста</p>
             </a>
@@ -224,14 +228,14 @@
                 <label class="order-contacts__contact-label legend-style" for="contact-phone">Тел</label>
                 <input class="order-contacts__input" type="tel" id="contact-phone" name="contact-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <svg class="order-contacts__phone-icon contact-icon" width="25" height="24">
-                  <use xlink:href="img/sprite.svg#contact-phone"></use>
+                  <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
               </div>
               <div class="order-form__contact-wrapper order-contacts">
                 <label class="order-contacts__contact-label legend-style" for="contact-email">E&#8209;mail</label>
                 <input class="order-contacts__input" type="email" id="contact-email" name="contact-email" placeholder="Ваш Email*" required>
                 <svg class="order-contacts__email-icon contact-icon" width="32" height="21">
-                  <use xlink:href="img/sprite.svg#contact-email"></use>
+                  <use xlink:href="img/sprite.svg#email"></use>
                 </svg>
               </div>
             </div>
@@ -254,7 +258,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo" href="index.html">
           <svg class="logo__icon" width="102" height="35">
-            <use xlink:href="img/sprite.svg#logo__icon"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
         <div class="page-footer__social-list social">
@@ -262,21 +266,21 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#" aria-label="Мишка в Инстаграм">
                 <svg class="social__icon" width="23" height="22">
-                  <use xlink:href="img/sprite.svg#social__instagram"></use>
+                  <use xlink:href="img/sprite.svg#insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--fb" href="#" aria-label="Мишка в Фейсбуке">
                 <svg class="social__icon" width="16" height="30">
-                  <use xlink:href="img/sprite.svg#social__fb"></use>
+                  <use xlink:href="img/sprite.svg#fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Твиттере">
                 <svg class="social__icon" width="25" height="20">
-                  <use xlink:href="img/sprite.svg#social__twitter"></use>
+                  <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -286,13 +290,13 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML-академия">
             <svg class="copyright__icon" width="28" height="35">
-              <use xlink:href="img/sprite.svg#copyright__icon"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

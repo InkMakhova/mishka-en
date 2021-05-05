@@ -2,8 +2,7 @@
   text-decoration: none;
   color: @black;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  .font(17px; 24px);
   margin: 0;
   position: relative;
 
@@ -13,6 +12,11 @@
 
   &:hover {
     color: rgba(@black, 0.6);
+  }
+
+  &:focus {
+    outline: @green-light auto 2px;
+    opacity: 1;
   }
 
   &:hover .cart__icon {

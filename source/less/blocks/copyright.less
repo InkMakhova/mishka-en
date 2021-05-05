@@ -9,8 +9,7 @@
 
 .copyright__text {
   font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
+  .font(19px; 18px);
   color: @black;
   margin-right: 28px;
 
@@ -35,5 +34,9 @@
   &:active .copyright__icon {
     fill: @green-puerto-rico;
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: @green-dark auto 2px;
   }
 }

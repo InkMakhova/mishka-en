@@ -6,8 +6,7 @@
   text-decoration: none;
   color: @black;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
+  .font(15px; 24px);
   padding: 0;
   margin: 0;
   display: block;
@@ -18,5 +17,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: @green-light auto 2px;
+    opacity: 1;
   }
 }

@@ -55,6 +55,12 @@
   }
 }
 
+.page-header__logo {
+  &:focus {
+    outline: @green-dark auto 2px;
+  }
+}
+
 .page-header__logo.logo {
   &:hover {
     opacity: 0.6;
@@ -83,21 +89,26 @@
     position: absolute;
     bottom: -44px;
     z-index: 10;
+    max-width: 60%;
   }
 
   @media (min-width: @desktop-width) {
     order: 1;
     position: static;
+    max-width: 42%;
   }
 }
 
 .page-header__menu-list {
   @media (min-width: @tablet-width) {
     display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
     order: 3;
+    max-width: 40%;
   }
 }
 
@@ -106,10 +117,10 @@
   bottom: -58px;
   right: 50px;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  .font(15px; 24px);
   color: @grey-dark;
   z-index: 10;
+  max-width: 40%;
 
   @media (max-width: @mobile-width-only) {
     display: none;

@@ -145,6 +145,10 @@
     text-decoration-color: rgba(@green-puerto-rico, 0.1);
   }
 
+  &:focus {
+    outline: @green-dark auto 2px;
+  }
+
   @media (min-width: @tablet-width) {
     text-underline-offset: 7px;
     font-size: 17px;
@@ -161,6 +165,13 @@
   position: relative;
   height: 454px;
   margin-bottom: 42px;
+  background-image: url("../img/map-tablet.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-tablet@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     height: 457px;
