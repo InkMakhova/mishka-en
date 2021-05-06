@@ -27,48 +27,36 @@ button.addEventListener('click', toggleMenu);
 button.addEventListener('click', toggleAriaLabel);
 
 //открытие и закрытие модального окна
-//let popular = document.querySelector('.popular');
-let page = document.querySelector('.page__body');
 let linkOpenModal = document.querySelector('.promo-card__link');
 let linkAddToCart = document.querySelectorAll('.product-card__cart-link');
+let modalOverlay = document.querySelector('.modal-overlay');
 let modal = document.querySelector('.modal');
-let form = modal.querySelector('.modal__form');
-let mouseDownInModal = false;
 
 //открытие
-linkOpenModal.addEventListener('click', function(evt) {
+function openModal(evt) {
   evt.preventDefault();
+  modalOverlay.classList.add('modal-overlay--show');
   modal.classList.add('modal--show');
-});
-
-for (let i = 0; i < linkAddToCart.length; i++) {
-  linkAddToCart[i].addEventListener('click', function(evt) {
-    evt.preventDefault();
-    modal.classList.add('modal--show');
-  });
 }
 
 //закрытие
 window.addEventListener('keydown', function(evt) {
   if (evt.code === 'Escape') {
+    modalOverlay.classList.remove('modal-overlay--show');
     modal.classList.remove('modal--show');
   }
 });
 
-/*page.addEventListener('mousedown', function(evt) {
-  mouseDownInModal = false;
+modalOverlay.addEventListener('mousedown', function(evt) {
+  modalOverlay.classList.remove('modal-overlay--show');
+  modal.classList.remove('modal--show');
 });
 
-modal.addEventListener('mousedown', function(evt) {
-  mouseDownInModal = true;
-});
+//вызов модального окна
+if (linkOpenModal !== null) {
+  linkOpenModal.addEventListener('click', openModal);
+}
 
-window.addEventListener('mousedown', function(evt) {
-  if (mouseDownInModal === false) {
-    modal.classList.remove('modal--show');
-  }
-});*/
-
-//отправка формы
-form.addEventListener('submit', function(evt) {
-});
+for (let i = 0; i < linkAddToCart.length; i++) {
+  linkAddToCart[i].addEventListener('click', openModal);
+}

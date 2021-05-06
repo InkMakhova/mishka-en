@@ -205,7 +205,7 @@
           </div>
           <div class="contacts__map-wrapper">
             <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871592122!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfi!4v1617021509698!5m2!1sru!2sfi"
-              width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy">
+              width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" title="Магазин Мишка на карте">
             </iframe>
           </div>
           <div class="contacts__link-wrapper">
@@ -258,14 +258,18 @@
       </div>
     </footer>
 
+    <div class="modal-overlay"></div>
     <section class="modal">
       <h2 class="modal__title title">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="modal__text">Выберите размер:</p>
-        <div class="modal__buttons-size-wrapper">
-          <input class="modal__button-size" type="button" value="s">
-          <input class="modal__button-size" type="button" value="m">
-          <input class="modal__button-size" type="button" value="l">
+        <div class="modal__size-wrapper">
+          <input class="modal__radio-size visually-hidden" type="radio" name="size" id="size-s" value="s" checked>
+          <label class="modal__radio-label modal__radio-label--s" for="size-s"></label>
+          <input class="modal__radio-size visually-hidden" type="radio" name="size" id="size-m" value="m">
+          <label class="modal__radio-label modal__radio-label--m" for="size-m"></label>
+          <input class="modal__radio-size visually-hidden" type="radio" name="size" id="size-l" value="l">
+          <label class="modal__radio-label modal__radio-label--l" for="size-l"></label>
         </div>
         <button type="submit" class="modal__button button">Добавить</button>
       </form>

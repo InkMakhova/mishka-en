@@ -256,14 +256,18 @@
       </div>
     </footer>
 
+    <div class="modal-overlay"></div>
     <section class="modal">
       <h2 class="modal__title title">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="modal__text">Выберите размер:</p>
-        <div class="modal__buttons-size-wrapper">
-          <input class="modal__button-size" type="button" value="s">
-          <input class="modal__button-size" type="button" value="m">
-          <input class="modal__button-size" type="button" value="l">
+        <div class="modal__size-wrapper">
+          <input class="modal__radio-size visually-hidden" type="radio" name="size" id="size-s" value="s" checked>
+          <label class="modal__radio-label modal__radio-label--s" for="size-s"></label>
+          <input class="modal__radio-size visually-hidden" type="radio" name="size" id="size-m" value="m">
+          <label class="modal__radio-label modal__radio-label--m" for="size-m"></label>
+          <input class="modal__radio-size visually-hidden" type="radio" name="size" id="size-l" value="l">
+          <label class="modal__radio-label modal__radio-label--l" for="size-l"></label>
         </div>
         <button type="submit" class="modal__button button">Добавить</button>
       </form>
