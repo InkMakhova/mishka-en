@@ -60,3 +60,40 @@ if (linkOpenModal !== null) {
 for (let i = 0; i < linkAddToCart.length; i++) {
   linkAddToCart[i].addEventListener('click', openModal);
 }
+
+//оживление слайдера отзывов
+let slides = document.querySelectorAll('.slider__item');
+let buttonPrev = document.querySelector('.reviews__button-control--prev');
+let buttonNext = document.querySelector('.reviews__button-control--next');
+let prevIndex = 0;
+let nextIndex = 0;
+
+function slidePrev(evt) {
+  for (let i = 0; i < slides.length; i++) {
+    if (slides[i].classList.contains('slider__item--show')) {
+      prevIndex = (i + slides.length - 1) % slides.length;
+    }
+  }
+  switchSlide(prevIndex);
+}
+
+function slideNext(evt) {
+  for (let i = 0; i < slides.length; i++) {
+    if (slides[i].classList.contains('slider__item--show')) {
+      nextIndex = (i + 1) % slides.length;
+    }
+  }
+  switchSlide(nextIndex);
+}
+
+function switchSlide(i) {
+  for (let j = 0; j < slides.length; j++) {
+    slides[j].classList.remove('slider__item--show');
+  }
+  slides[i].classList.add('slider__item--show');
+}
+
+if (buttonPrev !== null && buttonNext !== null) {
+  buttonPrev.addEventListener('click', slidePrev);
+  buttonNext.addEventListener('click', slideNext);
+}
