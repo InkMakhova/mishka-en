@@ -12,6 +12,10 @@
 .page-main__background-title-wrapper {
   background-color: @grey-snow;
   border-top: 1px solid rgba(@black, 0.1);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .page-main__background-title-wrapper--decoration {
@@ -61,11 +65,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 152px;
-    min-height: 627px;
+    padding-top: 103px;
+    min-height: 578px;
     background-image: url("../img/hero-desktop.jpg");
     background-size: 1150px;
-    background-position-y: -3px;
+    background-position-y: -50px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -73,10 +77,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 153px;
-    min-height: 626px;
+    padding-top: 104px;
+    min-height: 577px;
     background-size: 1150px;
-    background-position-y: 0;
+    background-position-y: -51px;
   }
 }
 
@@ -84,12 +88,12 @@
   min-height: 177px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 97px;
-    min-height: 233px;
+    padding-top: 49px;
+    min-height: 186px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 267px;
+    min-height: 219px;
   }
 }
 

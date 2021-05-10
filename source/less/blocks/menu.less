@@ -18,9 +18,13 @@
 
   @media (min-width: @tablet-width) {
     box-shadow: none;
-    min-height: 89px;
+    min-height: 88px;
     padding-left: 43px;
-    padding-right: 39px;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 89px;
   }
 }
 
@@ -29,6 +33,7 @@
     border-left: 1px solid rgba(@black, 0.1);
     border-right: 1px solid rgba(@black, 0.1);
     width: 82px;
+    padding-right: 39px;
   }
 }
 
