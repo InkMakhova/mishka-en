@@ -1,58 +1,48 @@
-# Личный проект «Мишка» 
+# Мишка - интернет-магазин милых вещей для дома ручной работы
 
-* Студент: [Inna Makhova](https://up.htmlacademy.ru/adaptive/22/user/1174641).
-* Наставник: [Арсений Березин] (https://htmlacademy.ru/profile/id263537).
+<a href="https://mishka-ru-makhova.vercel.app/">Demo</a>
 
----
+Проект состоит из 3х сверстанных страниц (главная, страница каталога и страница формы заказа).
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+Технические особенности:
+1. Адаптивность сетки: мобильная, планшетная и десктопная версии;
+2. Адаптивность графики: ретинизация, векторные изображения;
+3. Сетка: flex и grid;
+4. Используемая методология: БЭМ;
+5. Используемый препроцессор: Less;
+6. Используемый инструмент автоматизации: Gulp;
+7. Кроссбраузерность: Chrome, Firefox, Safari;
+8. Верстка выполнена с учетом доступности и концепции pixel perfect;
+9. Для слайдера использован JS;
 
-Полезный файл:
+## Usage
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
-
----
-
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1174641-mishka-22) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808189-541c1580-a190-11e9-8c4c-459d9c0f22f5.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808191-54b4ac00-a190-11e9-92f8-ca77249661c3.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808192-54b4ac00-a190-11e9-804e-4565b5bd699c.jpg">
-
-Клонировать репозиторий можно так:
-
+### Install dependencies
 ```
-git clone SSH-адрес_вашего_форка
+npm install
 ```
 
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+### Install gulp
+```
+npm gulp
+```
 
-#### 4. Начинайте обучение!
+### Run in the development mode
+```
+npm start
+```
+Open http://localhost:3001 to view it in the browser.
 
----
+### Run tests
+```
+npm test
+```
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
+### Build
+```
+npm run build
+```
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+Creates an optimized production build.
 
-[check-image]: https://github.com/htmlacademy-adaptive/1174641-mishka-22/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1174641-mishka-22/actions
+Макет проекта в <a href="https://www.figma.com/file/hlAaHoIe3m1WS5mftvlr9t/HTML-2-%2F-%D0%9C%D0%B8%D1%88%D0%BA%D0%B0-(22)?node-id=43%3A122">Figma</a>
