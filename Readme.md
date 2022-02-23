@@ -1,6 +1,6 @@
 # Mishka is an online store for cute handmade things for a home
 
-<a href="https://mishka-ru-makhova.vercel.app/">Demo</a>
+<a href="https://inkmakhova.github.io/mishka-en/">Demo</a>
 
 The project consists of 3 pages (Main, Catalog and Order).
 
