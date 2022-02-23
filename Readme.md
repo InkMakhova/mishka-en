@@ -1,20 +1,19 @@
-# Мишка - интернет-магазин милых вещей для дома ручной работы
+# Mishka is an online store for cute handmade things for a home
 
 <a href="https://mishka-ru-makhova.vercel.app/">Demo</a>
 
-Проект состоит из 3х сверстанных страниц (главная, страница каталога и страница формы заказа).
+The project consists of 3 pages (Main, Catalog and Order).
 
-Технические особенности:
-1. Адаптивность сетки: мобильная, планшетная и десктопная версии;
-2. Адаптивность графики: ретинизация, векторные изображения;
-3. Сетка: flex и grid;
-4. Используемая методология: БЭМ;
-5. Используемый препроцессор: Less;
-6. Используемый инструмент автоматизации: Gulp;
-7. Кроссбраузерность: Chrome, Firefox, Safari;
-8. Верстка выполнена с учетом доступности и концепции pixel perfect;
-9. Для слайдера использован JS;
-
+Technical features:
+1. Adaptability: mobile, tablet and desktop versions;
+2. Graphics adaptability: retinization, vector images;
+3. Grid design: flex and grid;
+4. Methodology: BEM;
+5. Preprocessor: Less;
+6. Automation tool: Gulp;
+7. Cross-browser compatibility: Chrome, Firefox, Safari;
+8. The project is made taking into account the accessibility and the concept of pixel perfect;
+9. JS is used for the slider;
 ## Usage
 
 ### Install dependencies
@@ -45,4 +44,4 @@ npm run build
 
 Creates an optimized production build.
 
-Макет проекта в <a href="https://www.figma.com/file/hlAaHoIe3m1WS5mftvlr9t/HTML-2-%2F-%D0%9C%D0%B8%D1%88%D0%BA%D0%B0-(22)?node-id=43%3A122">Figma</a>
+Project layout <a href="https://www.figma.com/file/hlAaHoIe3m1WS5mftvlr9t/HTML-2-%2F-%D0%9C%D0%B8%D1%88%D0%BA%D0%B0-(22)?node-id=43%3A122">Figma</a>
